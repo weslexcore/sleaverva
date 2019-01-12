@@ -72,7 +72,7 @@ class App extends Component {
           <div ref={this.about} />
           <Header as='h1'>About</Header>
           <Container style={{display:'flex', flexWrap:'wrap', justifyContent:'space-between'}}>
-            <Image src={band} />
+            <Image src={band} style={{width:'100%'}} />
             <p style={{fontSize:18, width:'80%', margin:'10px auto'}}>
               Spicy jalapeno bacon ipsum dolor amet cow kevin tail, shankle ham flank bresaola beef ribs swine chicken andouille pancetta biltong landjaeger short loin. Meatloaf kevin flank tenderloin cupim ham hock capicola ground round. Beef pig kevin meatloaf filet mignon strip steak doner sirloin frankfurter. Short loin shank boudin bacon beef shankle sausage ground round meatloaf. Picanha prosciutto sausage, pancetta pork chop pork loin capicola boudin.
             </p>
