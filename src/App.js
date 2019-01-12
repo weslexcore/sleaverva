@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {  Header, Container, Image } from 'semantic-ui-react'
+import {  Header, Container } from 'semantic-ui-react'
 //Customed
 import Hero from './components/Hero'
 import Sidebar from './components/Sidebar'

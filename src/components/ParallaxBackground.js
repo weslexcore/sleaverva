@@ -4,9 +4,8 @@ const ParallaxBackground = props => {
     const StyledBackground =  {
         backgroundImage: `url(${props.url})`,
         height: '100vh',
-        width: '100vw',
         backgroundAttachment: 'fixed',
-        backgroundPosition: 'center',
+        backgroundPosition: props.position || 'center',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover'
     }
