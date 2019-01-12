@@ -9,7 +9,7 @@ import AlbumCard from './components/AlbumCard'
 import EventCard from './components/EventCard'
 import SocialLinks from './components/SocialLinks'
 //Images
-import band from './assets/img/mirroredBand.jpg'
+import band from './assets/img/cuts.jpg'
 import jump from './assets/img/jump.jpg'
 import skyline from './assets/img/skyline.jpg'
 
@@ -71,9 +71,9 @@ class App extends Component {
         <SectionContainer>
           <div ref={this.about} />
           <Header as='h1'>About</Header>
-          <Container style={{display:'flex', flexWrap:'wrap', justifyContent:'space-between'}}>
+          <Container style={{display:'flex', flexDirection:'column', alignItems:'center'}}>
             <img src={band} alt='Sleave' style={{width:'100%'}} />
-            <p style={{fontSize:18, width:'80%', margin:'10px auto'}}>
+            <p style={{fontSize:18, width:'90%', marginTop:15, display:'block'}}>
               Spicy jalapeno bacon ipsum dolor amet cow kevin tail, shankle ham flank bresaola beef ribs swine chicken andouille pancetta biltong landjaeger short loin. Meatloaf kevin flank tenderloin cupim ham hock capicola ground round. Beef pig kevin meatloaf filet mignon strip steak doner sirloin frankfurter. Short loin shank boudin bacon beef shankle sausage ground round meatloaf. Picanha prosciutto sausage, pancetta pork chop pork loin capicola boudin.
             </p>
 
