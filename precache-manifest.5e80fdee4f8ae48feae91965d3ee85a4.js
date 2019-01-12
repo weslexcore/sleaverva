@@ -1,10 +1,10 @@
 self.__precacheManifest = [
   {
-    "revision": "8e3c7f5520f5ae906c6cf6d7f3ddcd19",
-    "url": "/sleaverva/static/media/icons.8e3c7f55.eot"
+    "revision": "b87b9ba532ace76ae9f6edfe9f72ded2",
+    "url": "/sleaverva/static/media/icons.b87b9ba5.ttf"
   },
   {
-    "revision": "72316765843bcf5c4d36",
+    "revision": "d763e04ced0a090738ef",
     "url": "/sleaverva/static/css/main.f801283c.chunk.css"
   },
   {
@@ -60,28 +60,32 @@ self.__precacheManifest = [
     "url": "/sleaverva/static/media/icons.0ab54153.woff2"
   },
   {
-    "revision": "72316765843bcf5c4d36",
-    "url": "/sleaverva/static/js/main.72316765.chunk.js"
+    "revision": "d763e04ced0a090738ef",
+    "url": "/sleaverva/static/js/main.d763e04c.chunk.js"
   },
   {
-    "revision": "faff92145777a3cbaf8e7367b4807987",
-    "url": "/sleaverva/static/media/icons.faff9214.woff"
+    "revision": "8e3c7f5520f5ae906c6cf6d7f3ddcd19",
+    "url": "/sleaverva/static/media/icons.8e3c7f55.eot"
+  },
+  {
+    "revision": "ef60a4f6c25ef7f39f2d25a748dbecfe",
+    "url": "/sleaverva/static/media/outline-icons.ef60a4f6.woff"
   },
   {
     "revision": "701ae6abd4719e9c2ada3535a497b341",
     "url": "/sleaverva/static/media/outline-icons.701ae6ab.eot"
   },
   {
-    "revision": "cd6c777f1945164224dee082abaea03a",
-    "url": "/sleaverva/static/media/outline-icons.cd6c777f.woff2"
+    "revision": "faff92145777a3cbaf8e7367b4807987",
+    "url": "/sleaverva/static/media/icons.faff9214.woff"
   },
   {
     "revision": "ad97afd3337e8cda302d10ff5a4026b8",
     "url": "/sleaverva/static/media/outline-icons.ad97afd3.ttf"
   },
   {
-    "revision": "ef60a4f6c25ef7f39f2d25a748dbecfe",
-    "url": "/sleaverva/static/media/outline-icons.ef60a4f6.woff"
+    "revision": "cd6c777f1945164224dee082abaea03a",
+    "url": "/sleaverva/static/media/outline-icons.cd6c777f.woff2"
   },
   {
     "revision": "82f60bd0b94a1ed68b1e6e309ce2e8c3",
@@ -92,8 +96,16 @@ self.__precacheManifest = [
     "url": "/sleaverva/static/media/brand-icons.13db00b7.eot"
   },
   {
+    "revision": "962a1bf31c081691065fe333d9fa8105",
+    "url": "/sleaverva/static/media/icons.962a1bf3.svg"
+  },
+  {
     "revision": "a046592bac8f2fd96e994733faf3858c",
     "url": "/sleaverva/static/media/brand-icons.a046592b.woff"
+  },
+  {
+    "revision": "c5ebe0b32dc1b5cc449a76c4204d13bb",
+    "url": "/sleaverva/static/media/brand-icons.c5ebe0b3.ttf"
   },
   {
     "revision": "e8c322de9658cbeb8a774b6624167c2c",
@@ -104,23 +116,11 @@ self.__precacheManifest = [
     "url": "/sleaverva/static/media/flags.9c74e172.png"
   },
   {
-    "revision": "c5ebe0b32dc1b5cc449a76c4204d13bb",
-    "url": "/sleaverva/static/media/brand-icons.c5ebe0b3.ttf"
-  },
-  {
-    "revision": "962a1bf31c081691065fe333d9fa8105",
-    "url": "/sleaverva/static/media/icons.962a1bf3.svg"
-  },
-  {
-    "revision": "b87b9ba532ace76ae9f6edfe9f72ded2",
-    "url": "/sleaverva/static/media/icons.b87b9ba5.ttf"
-  },
-  {
     "revision": "7ba589dd441d98677913",
     "url": "/sleaverva/static/css/1.ef7468c2.chunk.css"
   },
   {
-    "revision": "c10f2e7777c9811b83473f1f2a39200b",
+    "revision": "24b9cebd476a3ce7c9e36fe6f8e135b5",
     "url": "/sleaverva/index.html"
   }
 ];
