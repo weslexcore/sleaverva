@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import {  Header, Container } from 'semantic-ui-react'
 //Customed
 import Hero from './components/Hero'
@@ -12,7 +12,7 @@ import SocialLinks from './components/SocialLinks'
 import band from './assets/img/cuts.jpg'
 import jump from './assets/img/jump.jpg'
 import skyline from './assets/img/skyline.jpg'
-
+// Style for fonts
 import './style.css'
 
 class App extends Component {
@@ -82,8 +82,8 @@ class App extends Component {
           </Container>
         </SectionContainer>
       </React.Fragment>
-    );
+    )
   }
 }
 
-export default App;
+export default App
