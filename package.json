@@ -2,7 +2,9 @@
   "name": "sleave",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://weslexcore.github.io/sleaverva/",
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-scripts": "2.1.3",
@@ -10,6 +12,8 @@
     "semantic-ui-react": "^0.84.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
