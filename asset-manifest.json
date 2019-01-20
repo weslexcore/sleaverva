@@ -1,13 +1,13 @@
 {
   "main.css": "/sleaverva/static/css/main.f801283c.chunk.css",
-  "main.js": "/sleaverva/static/js/main.d511a560.chunk.js",
-  "main.js.map": "/sleaverva/static/js/main.d511a560.chunk.js.map",
+  "main.js": "/sleaverva/static/js/main.13089ce7.chunk.js",
+  "main.js.map": "/sleaverva/static/js/main.13089ce7.chunk.js.map",
   "static/css/1.ef7468c2.chunk.css": "/sleaverva/static/css/1.ef7468c2.chunk.css",
   "static/js/1.7ba589dd.chunk.js": "/sleaverva/static/js/1.7ba589dd.chunk.js",
   "static/js/1.7ba589dd.chunk.js.map": "/sleaverva/static/js/1.7ba589dd.chunk.js.map",
   "runtime~main.js": "/sleaverva/static/js/runtime~main.845598d8.js",
   "runtime~main.js.map": "/sleaverva/static/js/runtime~main.845598d8.js.map",
-  "static/media/semantic.min.css": "/sleaverva/static/media/brand-icons.a1a749e8.svg",
+  "static/media/semantic.min.css": "/sleaverva/static/media/brand-icons.c5ebe0b3.ttf",
   "static/media/fb.png": "/sleaverva/static/media/fb.6bdbb304.png",
   "static/media/bandcampwhite.png": "/sleaverva/static/media/bandcampwhite.ac0f4606.png",
   "static/media/pink.jpg": "/sleaverva/static/media/pink.b92bd815.jpg",
@@ -20,6 +20,6 @@
   "static/css/1.ef7468c2.chunk.css.map": "/sleaverva/static/css/1.ef7468c2.chunk.css.map",
   "static/css/main.f801283c.chunk.css.map": "/sleaverva/static/css/main.f801283c.chunk.css.map",
   "index.html": "/sleaverva/index.html",
-  "precache-manifest.ebb525db01ea826a5e66b68fad5dea65.js": "/sleaverva/precache-manifest.ebb525db01ea826a5e66b68fad5dea65.js",
+  "precache-manifest.7fa4b95a4e53e865f9140aef250b181a.js": "/sleaverva/precache-manifest.7fa4b95a4e53e865f9140aef250b181a.js",
   "service-worker.js": "/sleaverva/service-worker.js"
 }
