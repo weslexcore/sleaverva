@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/sleaverva/precache-manifest.7fa4b95a4e53e865f9140aef250b181a.js"
+  "/sleaverva/precache-manifest.9388fc625280f9b785b6099fcf46121b.js"
 );
 
 workbox.clientsClaim();
