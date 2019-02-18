@@ -11,7 +11,7 @@ import SocialLinks from './components/SocialLinks'
 //Images
 import band from './assets/img/cuts.jpg'
 import jump from './assets/img/jump.jpg'
-import skyline from './assets/img/skyline.jpg'
+import skyline from './assets/img/sit.jpg'
 // Style for fonts
 import './style.css'
 
