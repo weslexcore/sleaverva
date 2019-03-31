@@ -1,5 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text');
-
+@font-face{
+    font-family: DDC;
+    src: url('./assets/fonts/DDCHardware-Condensed.otf') format('opentype')
+}
 .logo {
-    font-family:'Libre Barcode 128 Text' !important;
+    font-family:'DDC' !important;
+}
+
+h1{ 
+    font-family:'DDC' !important;
 }

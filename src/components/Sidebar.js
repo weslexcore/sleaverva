@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Icon, Menu, Sidebar } from 'semantic-ui-react'
 
-export default class SidebarExampleDimmed extends Component {
+export default class SidebarDimmed extends Component {
   state = { visible: false }
 
   handleHideClick = () => this.setState({ visible: false })
@@ -61,7 +61,10 @@ export default class SidebarExampleDimmed extends Component {
             visible={visible}
             width='thin'>
             {items.map(i => (
-                <Menu.Item style={{fontSize:20}} as='a' onClick={i.onClick}>
+                <Menu.Item key={i.label}
+                    style={{fontSize:20}} 
+                    as='a' 
+                    onClick={i.onClick}>
                     {i.icon ? <Icon name={i.icon} /> : null}
                     {i.label}
                 </Menu.Item>

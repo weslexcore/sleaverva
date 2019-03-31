@@ -8,21 +8,41 @@ import SectionContainer from './components/SectionContainer'
 import AlbumCard from './components/AlbumCard'
 import EventCard from './components/EventCard'
 import SocialLinks from './components/SocialLinks'
+import StyledVideoElem from './components/StyledVideoIframe'
 //Images
 import band from './assets/img/min/cuts-min.jpg'
 import jump from './assets/img/min/jump-min.jpg'
 import skyline from './assets/img/min/sit-min.jpg'
 // Style for fonts
 import './style.css'
+import fetchVideos from './clients/youtube';
 
 class App extends Component {
 
   constructor(props){
     super(props)
+    this.state = {
+      videos: []
+    }
     this.music = React.createRef()
     this.events = React.createRef()
     this.about = React.createRef()
     this.hero = React.createRef()
+  }
+
+  componentDidMount(){
+    this.fetchResource('Youtube')
+  }
+
+  fetchResource = async (type) => {
+    switch(type){
+      case "Youtube":
+        const response = await fetchVideos()
+        const videos = response.items ? response.items.map(i => i.resourceId.videoId) : []
+        return this.setState({ videos })
+      default: 
+        break
+    }
   }
 
   scrollToRef = ref => {
@@ -33,6 +53,7 @@ class App extends Component {
   }
 
   render() {
+    const { videos = [] } = this.state
     return (
       <React.Fragment>
 
@@ -57,13 +78,14 @@ class App extends Component {
 
         <SectionContainer>
           <div ref={this.music}/>
-          <Header as='h1'>Music</Header>
+          <Header as='h1'>Videos</Header>
+          {videos.length ? 
           <Container style={{display:'flex', flexWrap:'wrap', justifyContent:'space-between'}}>
-            <AlbumCard />
-            <AlbumCard />
-            <AlbumCard />
-            <AlbumCard />
+            {videos.map(id => <StyledVideoElem src={`https://www.youtube.com/embed/${id}`} id={id}/>)}
           </Container>
+          : <a target="_blank" rel="noopener noreferrer" href={"https://youtube.com/channel/UCUdKTK5lETIcCL3MjkkJd6A"}>Unable to load videos - Check out Sleave on Youtube</a>
+          }
+       
         </SectionContainer>
 
         <ParallaxBackground url={skyline}/>
