@@ -2,7 +2,7 @@ import React from 'react'
 import {  Header } from 'semantic-ui-react'
 import ParallaxBackground from './ParallaxBackground'
 import SocialLinks from './SocialLinks'
-import pink from '../assets/img/pink_cropped.jpg'
+import pink from '../assets/img/min/pink_cropped-min.jpg'
 
 
 const Hero = props => {

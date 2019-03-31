@@ -1,8 +1,8 @@
 import React from 'react'
-import fb from '../assets/img/fb.png'
-import fbwhite from '../assets/img/fbwhite.png'
-import bandcamp from '../assets/img/bandcamp.png'
-import bandcampwhite from '../assets/img/bandcampwhite.png'
+import fb from '../assets/img/min/fb-min.png'
+import fbwhite from '../assets/img/min/fbwhite-min.png'
+import bandcamp from '../assets/img/min/bandcamp-min.png'
+import bandcampwhite from '../assets/img/min/bandcampwhite-min.png'
 
 const SocialLinks = props => {
     const iconStyle = {width:'5vw', minWidth:40, maxWidth:50, margin:'0 10px'}

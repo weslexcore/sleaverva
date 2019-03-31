@@ -1,6 +1,6 @@
 import React from 'react'
 import {Card, Container, Image} from 'semantic-ui-react'
-import gold from '../assets/img/gold.jpg'
+import gold from '../assets/img/min/gold-min.jpg'
 
 const AlbumCard = ({ album:albm }) => {
     const album = albm ? albm : {

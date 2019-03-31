@@ -9,9 +9,9 @@ import AlbumCard from './components/AlbumCard'
 import EventCard from './components/EventCard'
 import SocialLinks from './components/SocialLinks'
 //Images
-import band from './assets/img/cuts.jpg'
-import jump from './assets/img/jump.jpg'
-import skyline from './assets/img/sit.jpg'
+import band from './assets/img/min/cuts-min.jpg'
+import jump from './assets/img/min/jump-min.jpg'
+import skyline from './assets/img/min/sit-min.jpg'
 // Style for fonts
 import './style.css'
 
