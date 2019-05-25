@@ -1,6 +1,6 @@
 import React from 'react'
 import {Card, Container, Image} from 'semantic-ui-react'
-import band from '../assets/img/min/bandPink-min.jpg'
+import band from '../assets/img/min/headtohead.jpeg'
 
 const EventCard = ({ event:evnt }) => {
     const event = evnt ? evnt : {image: band, title:"Event Title", date: new Date().toLocaleDateString(), info: 'Spicy jalapeno bacon ipsum dolor amet pork ham hock kevin spare ribs chuck strip steak. Chicken landjaeger picanha shoulder tongue. Prosciutto bacon jowl chicken picanha rump corned beef chuck filet mignon shank pork chop.'}

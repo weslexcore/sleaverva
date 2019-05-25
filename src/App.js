@@ -11,7 +11,7 @@ import SocialLinks from './components/SocialLinks'
 import StyledVideoElem from './components/StyledVideoIframe'
 //Images
 import band from './assets/img/min/cuts-min.jpg'
-import jump from './assets/img/min/jump-min.jpg'
+import tower from './assets/img/min/lookdown.jpeg'
 import skyline from './assets/img/min/sit-min.jpg'
 // Style for fonts
 import './style.css'
@@ -63,18 +63,18 @@ class App extends Component {
           <div ref={this.hero}/>
         </Hero>
         
-        <SectionContainer >
+        <SectionContainer>
           <div ref={this.events}/>
           <Header as='h1'>Events</Header>
           <Container style={{display:'flex', flexWrap:'wrap', justifyContent:'space-between'}}>
             <EventCard />
+            {/* <EventCard />
             <EventCard />
-            <EventCard />
-            <EventCard />
+            <EventCard /> */}
           </Container>
         </SectionContainer>
         
-        <ParallaxBackground url={jump}/>
+        <ParallaxBackground url={skyline} position='top'/>
 
         <SectionContainer>
           <div ref={this.music}/>
@@ -88,7 +88,7 @@ class App extends Component {
        
         </SectionContainer>
 
-        <ParallaxBackground url={skyline}/>
+        <ParallaxBackground url={tower}/>
 
         <SectionContainer>
           <div ref={this.about} />
