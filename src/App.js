@@ -1,28 +1,37 @@
 import React, { Component } from 'react'
-import {  Header, Container } from 'semantic-ui-react'
+import {  Container, Header } from 'semantic-ui-react'
 //Customed
+import Bio from './components/Bio'
 import Hero from './components/Hero'
 import Sidebar from './components/Sidebar'
 import ParallaxBackground from './components/ParallaxBackground'
 import SectionContainer from './components/SectionContainer'
-import AlbumCard from './components/AlbumCard'
+// import AlbumCard from './components/AlbumCard'
 import EventCard from './components/EventCard'
-import SocialLinks from './components/SocialLinks'
-import StyledVideoElem from './components/StyledVideoIframe'
+// import StyledVideoElem from './components/StyledVideoIframe'
 //Images
-import band from './assets/img/min/cuts-min.jpg'
-import tower from './assets/img/min/lookdown.jpeg'
-import skyline from './assets/img/min/sit-min.jpg'
+// import tower from './assets/img/min/lookdown.jpeg'
+import skyline from './assets/img/min/headtohead.jpeg'
 // Style for fonts
 import './style.css'
-import fetchVideos from './clients/youtube';
+// import fetchVideos from './clients/youtube';
 
 class App extends Component {
 
   constructor(props){
     super(props)
     this.state = {
-      videos: []
+      videos: [],
+      events:[
+        {
+          url: 'https://www.facebook.com/events/483718609034958/',
+          title:'The Everafter / Nine Line / Second Suitor / Sleave +MORE',
+          date: 'Sunday, July 7, 2019 at 6 PM – 10 PM',
+          location: `Garden Grove Brewing & Urban Winery \n
+          3445 W Cary St, Richmond, Virginia 23221`,
+          imageUrl: 'https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/64390866_614257029083678_4601687089749164032_n.jpg?_nc_cat=111&_nc_oc=AQkiiGefGQWYlirjO9If6c0mA7feTpiCtw_kJhLJ7iqST_5lVZ0wdIX9PdWxSwm7Sig&_nc_ht=scontent-iad3-1.xx&oh=ecb165ebe9e37a981423bb2ead17a0e8&oe=5DB8B367'
+        }
+      ]
     }
     this.music = React.createRef()
     this.events = React.createRef()
@@ -30,20 +39,32 @@ class App extends Component {
     this.hero = React.createRef()
   }
 
-  componentDidMount(){
-    this.fetchResource('Youtube')
-  }
+  // componentDidMount(){
+  //   this.fetchResource('Youtube')
+  //   this.fetchResource('Facebook')
+  // }
 
-  fetchResource = async (type) => {
-    switch(type){
-      case "Youtube":
-        const response = await fetchVideos()
-        const videos = response.items ? response.items.map(i => i.resourceId.videoId) : []
-        return this.setState({ videos })
-      default: 
-        break
-    }
-  }
+
+  // fetchResource = async (type) => {
+  //   switch(type){
+  //     case "Youtube":
+  //       const response = await fetchVideos()
+  //       const videos = response.items ? response.items.map(i => i.resourceId.videoId) : []
+  //       return this.setState({ videos })
+  //     case 'Facebook':
+  //     console.log(process.env)
+  //       window.FB.api(
+  //         '/428267797377367/events?access_token='+process.env.REACT_FB_TOKEN,
+  //         'GET',
+  //         {},
+  //         function(response) {
+  //             console.log(response)
+  //         }
+  //       );
+  //     default: 
+  //       break
+  //   }
+  // }
 
   scrollToRef = ref => {
     window.scrollTo({
@@ -53,55 +74,28 @@ class App extends Component {
   }
 
   render() {
-    const { videos = [] } = this.state
+    const { events } = this.state
     return (
       <React.Fragment>
-
         <Sidebar scrollToRef={this.scrollToRef}/>
-
         <Hero>
           <div ref={this.hero}/>
-        </Hero>
+        </Hero>  
         
         <SectionContainer>
           <div ref={this.events}/>
           <Header as='h1'>Events</Header>
           <Container style={{display:'flex', flexWrap:'wrap', justifyContent:'space-between'}}>
-            <EventCard />
-            {/* <EventCard />
-            <EventCard />
-            <EventCard /> */}
+          { events.map(EVENT => <EventCard event={EVENT} />) }
           </Container>
         </SectionContainer>
-        
+
         <ParallaxBackground url={skyline} position='top'/>
-
-        <SectionContainer>
-          <div ref={this.music}/>
-          <Header as='h1'>Videos</Header>
-          {videos.length ? 
-          <Container style={{display:'flex', flexWrap:'wrap', justifyContent:'space-between'}}>
-            {videos.map(id => <StyledVideoElem src={`https://www.youtube.com/embed/${id}`} id={id}/>)}
-          </Container>
-          : <a target="_blank" rel="noopener noreferrer" href={"https://youtube.com/channel/UCUdKTK5lETIcCL3MjkkJd6A"}>Unable to load videos - Check out Sleave on Youtube</a>
-          }
-       
-        </SectionContainer>
-
-        <ParallaxBackground url={tower}/>
 
         <SectionContainer>
           <div ref={this.about} />
           <Header as='h1'>About</Header>
-          <Container style={{display:'flex', flexDirection:'column', alignItems:'center'}}>
-            <img src={band} alt='Sleave' style={{width:'100%'}} />
-            <p style={{fontSize:18, width:'90%', marginTop:15, display:'block'}}>
-              Spicy jalapeno bacon ipsum dolor amet cow kevin tail, shankle ham flank bresaola beef ribs swine chicken andouille pancetta biltong landjaeger short loin. Meatloaf kevin flank tenderloin cupim ham hock capicola ground round. Beef pig kevin meatloaf filet mignon strip steak doner sirloin frankfurter. Short loin shank boudin bacon beef shankle sausage ground round meatloaf. Picanha prosciutto sausage, pancetta pork chop pork loin capicola boudin.
-            </p>
-
-            <SocialLinks style={{width:'100%', textAlign:'center', marginTop:40}}/>
-
-          </Container>
+          <Bio/>
         </SectionContainer>
       </React.Fragment>
     )
@@ -109,3 +103,18 @@ class App extends Component {
 }
 
 export default App
+
+
+
+
+// <SectionContainer>
+//   <div ref={this.music}/>
+//   <Header as='h1'>Videos</Header>
+//   {videos.length ? 
+//   <Container style={{display:'flex', flexWrap:'wrap', justifyContent:'space-between'}}>
+//     {videos.map(id => <StyledVideoElem src={`https://www.youtube.com/embed/${id}`} id={id}/>)}
+//   </Container>
+//   : <a target="_blank" rel="noopener noreferrer" href={"https://youtube.com/channel/UCUdKTK5lETIcCL3MjkkJd6A"}>Unable to load videos - Check out Sleave on Youtube</a>
+//   }
+
+// </SectionContainer>

@@ -32,14 +32,14 @@ export default class SidebarDimmed extends Component {
             this.handleHideClick()
         }
     },
-    {
-        label: 'Music',
-        icon: 'music',
-        onClick: () =>  {
-            scrollToRef('music')
-            this.handleHideClick()
-        }
-    },
+    // {
+    //     label: 'Music',
+    //     icon: 'music',
+    //     onClick: () =>  {
+    //         scrollToRef('music')
+    //         this.handleHideClick()
+    //     }
+    // },
     {
         label: 'About',
         icon: 'user',
