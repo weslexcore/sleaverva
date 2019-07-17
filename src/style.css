@@ -13,3 +13,7 @@ h1{
 button{ 
     font-family:'DDC' !important;
 }
+
+.grid {
+    margin: 0 auto;
+  }

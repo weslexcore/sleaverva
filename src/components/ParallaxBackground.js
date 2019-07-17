@@ -1,13 +1,20 @@
 import React from 'react'
 
+
+
 const ParallaxBackground = props => {
-    const StyledBackground =  {
+    let StyledBackground =  {
         backgroundImage: `url(${props.url})`,
         height: '100vh',
         backgroundAttachment: 'fixed',
         backgroundPosition: props.position || 'center',
         backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover'
+        backgroundSize: 'cover',
+        // background-attachment:initial;
+    }
+    const mq = window.matchMedia( "(max-width: 570px)" );
+    if (mq.matches) {
+        StyledBackground = {...StyledBackground, width: '100vw', backgroundAttachment: 'initial'}
     }
     return <div style={StyledBackground} {...props}></div>
 }

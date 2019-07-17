@@ -20,6 +20,7 @@ const StyledVideoElem = props => (
     <div style={container}>
         <iframe title={`sleave_video_${props.id}`} 
             style={iframeStyle} 
+            allowFullScreen="allowFullScreen" 
             {...props} />
     </div>
 )
