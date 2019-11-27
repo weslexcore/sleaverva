@@ -1,6 +1,13 @@
 import React, { Component } from 'react'
 import { Icon, Menu, Sidebar } from 'semantic-ui-react'
 
+let fontSize = 20
+const mq = window.matchMedia( "(max-width: 570px)" );
+if (mq.matches) {
+    fontSize = 16
+}
+
+
 export default class SidebarDimmed extends Component {
   state = { visible: false }
 
@@ -55,6 +62,14 @@ export default class SidebarDimmed extends Component {
             scrollToRef('about')
             this.handleHideClick()
         }
+    },
+    {
+        label: 'Join Mailing List',
+        icon: 'envelope',
+        onClick: () =>  {
+            scrollToRef('mail')
+            this.handleHideClick()
+        }
     }]    
 
     return (
@@ -70,7 +85,7 @@ export default class SidebarDimmed extends Component {
             width='thin'>
             {items.map(i => (
                 <Menu.Item key={i.label}
-                    style={{fontSize:20}} 
+                    style={{fontSize}} 
                     as='a' 
                     onClick={i.onClick}>
                     {i.icon ? <Icon name={i.icon} /> : null}

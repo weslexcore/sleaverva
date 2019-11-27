@@ -5,6 +5,7 @@ import SocialLinks from './SocialLinks'
 import BasicModal from './BasicModal'
 import MusicModal from './MusicModal'
 import pink from '../assets/img/min/pink_cropped-min.jpg'
+import {MusicServices} from '../content/services'
 
 let ButtonStyles = {
     backgroundColor:'transparent',
@@ -47,7 +48,7 @@ const Hero = props => {
             <div style={HEADER_STYLE}>
                 <Header className='logo' style={TITLE}>SLEAVE</Header>
                 <Header className='logo' style={SUBTITLE}> "Don't Expect Anything" out Fall 2019 on UK Engineer Records</Header><br/>
-                <BasicModal modal={MusicModal}>
+                <BasicModal modal={MusicModal(MusicServices)}>
                     <button style={ButtonStyles}>Preview Now</button>
                 </BasicModal>
             </div>

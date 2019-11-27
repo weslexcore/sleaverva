@@ -38,6 +38,7 @@ class App extends Component {
     this.about = React.createRef()
     this.hero = React.createRef()
     this.videos = React.createRef()
+    this.mail = React.createRef()
   }
 
   componentDidMount = async () => {
@@ -99,6 +100,7 @@ class App extends Component {
           <div ref={this.about} />
           <Header as='h1'>About</Header>
           <Bio/>
+          <div ref={this.mail} />
         </SectionContainer>
       </React.Fragment>
     )

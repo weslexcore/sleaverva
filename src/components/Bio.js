@@ -1,8 +1,9 @@
 import React from 'react'
 import SocialLinks from './SocialLinks'
 import { Container } from 'semantic-ui-react'
+import MailChimp from '../components/MailChimp'
 import band from '../assets/img/min/band-pink.jpg'
-import albumCover from '../assets/img/cover.jpg'
+import albumCover from '../assets/img/min/pink_cropped-min.jpg'
 
 let SPAN_STYLE = {width:'87%', margin:'10px auto'}
 let CONTAINER_STYLE = {fontSize:18, width:'90%', marginTop:15, display:'block', lineHeight:1.5, textAlign:"justify"}
@@ -49,8 +50,10 @@ const Bio = () => (
             <span style={{fontSize:'24px', display:'block', textAlign:'center'}}><i>‘Don’t Expect Anything’</i> will be released under <a href='http://engineerrecords.com/' target='_blank' rel="noopener noreferrer">Engineer Records</a> in the Fall of 2019.</span>
             <img src={albumCover} style={ALBUM_STYLE} alt="Don't expect anything album art"/>
         </p>
+       
+        <SocialLinks style={{width:'100%', textAlign:'center', marginTop:40, display:'flex', justifyContent: 'center'}}/>
 
-        <SocialLinks style={{width:'100%', textAlign:'center', marginTop:40}}/>
+        <MailChimp />
 
         <Container style={CONTACT_STYLE}>
             <Container style={MOBILE_MARGIN}>
